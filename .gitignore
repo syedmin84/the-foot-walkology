@@ -1,0 +1,16 @@
+# Node modules (agar Tailwind via npm install use kar rahe hain)
+node_modules/
+
+# Build/output folders (agar koi build tool use kar rahe hain like Vite, Webpack, etc.)
+dist/
+build/
+
+# Environment files (agar API keys waghera use ho rahi ho)
+.env
+
+# System files (Windows/Mac)
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
