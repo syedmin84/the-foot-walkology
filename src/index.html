@@ -8,9 +8,9 @@
   </head>
   <body class="bg-[#CD031C]">
     <!-- Navigation Bar -->
-    <nav class="navigation-bar fixed w-full ">
+    <nav class="navigation-bar fixed w-full z-10">
       <div
-        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-12"
+        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-8"
       >
         <a href="#" class="flex flex-col font-archivo">
           <img src="../images/logo.svg" class="w-32" alt="" />
@@ -42,28 +42,32 @@
             />
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul
-            class="overflow-hidden lg:text-lg lg:font-bold text-white flex flex-col font-medium md:p-0 mt-4 md:mt-0 border md:border-0 rounded-lg md:space-x-6 lg:space-x-8 rtl:space-x-reverse md:flex-row gap-2 md:gap-0"
-          >
-            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
-              <a href="#" class="block py-2 px-3 rounded-sm">Home</a>
-            </li>
 
-            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+        <div
+          class="relative hidden w-full md:block md:w-auto"
+          id="navbar-dropdown"
+        >
+          <ul
+            class="md:rounded-none bg-[#cd031cb5] md:bg-transparent shadow-2xl md:shadow-none py-[10px_100px] md:py-0 absolute right-[20px] top-[-30px] md:static min-w-60 md:w-full overflow-hidden lg:text-lg lg:font-bold text-white flex flex-col font-medium md:p-0 mt-4 md:mt-0  md:border-0 rounded-lg md:space-x-4 lg:space-x-8 rtl:space-x-reverse md:flex-row gap-2 md:gap-0"
+          >
+            <li class="hover:bg-[#015784]  pl-6 md:pl-0 transition-all duration-200 ease-in-out  ">
+              <a href="#" class="block py-2 px-3 rounded-sm ">Home</a>
+            </li>   
+
+            <li class="hover:bg-[#015784] pl-6 md:pl-0 transition-all duration-200 ease-in-out">
               <a href="#shoe-features" class="block py-2 px-3 rounded-sm"
                 >Shoe Features</a
               >
             </li>
-            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+            <li class="hover:bg-[#015784]  pl-6 md:pl-0 transition-all duration-200 ease-in-out">
               <a href="#about" class="block py-2 px-3 rounded-sm">About</a>
             </li>
-            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+            <li class="hover:bg-[#015784]  pl-6 md:pl-0 transition-all duration-200 ease-in-out">
               <a href="#client-feedback" class="block py-2 px-3 rounded-sm"
                 >Client Feedback</a
               >
             </li>
-            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+            <li class="hover:bg-[#015784]  pl-6 md:pl-0 transition-all duration-200 ease-in-out">
               <a href="#contact" class="block py-2 px-3 rounded-sm">Contact</a>
             </li>
           </ul>
@@ -72,14 +76,36 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section  bg-[url('../images/shoe-hero-background.png')] bg-contain bg-no-repeat bg-right pt-36 px-16 max-w-screen-2xl mx-auto ">
-      <div class="flex items-center justify-between max-w-6xl mx-auto">
-        <h1 class=" text-7xl font-bold text-white leading-[5.75rem] font-archivo">The <br> Foot <br> Walkology</h1>
-        <div>
-           <img src="../images/shoe-hero-image.png" class="w-[600px]" alt="shoe-hero-image">
+    <header
+      class="relative z-0 hero-section bg-[url('../images/sm-background-hero.png')] md:bg-[url('../images/shoe-hero-background.png')] bg-cover md:bg-contain bg-no-repeat bg-right pt-36 md:px-16 max-w-screen-2xl mx-auto md:pb-10"
+    >
+      <div
+        class="flex flex-col md:flex-row md:items-center justify-between max-w-6xl mx-auto"
+      >
+        <h1
+          class="md:self-start pt-8 md:pt-16 pl-16 md:pl-0 text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[3rem] md:leading-[4.75rem] lg:leading-[5.75rem] font-archivo"
+        >
+          THE <br />
+          FOOT <br />
+          WALKOLOGY
+        </h1>
+        <div
+          class="relative md:static pb-40 md:pb-0 bg-[url('../images/sm-road.png')] md:bg-none bg-cover bg-no-repeat"
+          style="background-position: top 250px center"
+        >
+          <img
+            src="../images/shoe-hero-image.png"
+            class="w-[600px] px-8 md:px-0"
+            alt="shoe-hero-image"
+            
+          />
+          <div
+            class="md:hidden w-full h-[70px] bg-[#CD031C] md:bg-transparent absolute bottom-0 opacity-40"
+          ></div>
         </div>
       </div>
     </header>
+    <main class="max-w-screen-2xl mx-auto h-[400px]"></main>
   </body>
   <!-- Flowbite JS  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
