@@ -1,13 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-xl font-bold underline">
-    The Foot Walkology
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>The Foot Walkology</title>
+  </head>
+  <body class="bg-[#CD031C]">
+      <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 "
+      >
+        <a href="#" class="flex flex-col">
+          <img src="../images/logo.svg" class="w-32" alt="" />
+          <span class="text-white text-sm -mt-8 font-medium"
+            >The Foot Walkology</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-1 w-10 h-10 justify-center text-4xl text-gray-200 border-[1px] rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="overflow-hidden lg:text-lg lg:font-bold text-white flex flex-col font-medium md:p-0 mt-4 md:mt-0 border md:border-0 rounded-lg md:space-x-6 lg:space-x-8 rtl:space-x-reverse md:flex-row gap-2 md:gap-0"
+          >
+            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+              <a href="#" class="block py-2 px-3 rounded-sm">Home</a>
+            </li>
+
+            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+              <a href="#shoe-features" class="block py-2 px-3 rounded-sm"
+                >Shoe Features</a
+              >
+            </li>
+            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+              <a href="#about" class="block py-2 px-3 rounded-sm">About</a>
+            </li>
+            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+              <a href="#client-feedback" class="block py-2 px-3 rounded-sm"
+                >Client Feedback</a
+              >
+            </li>
+            <li class="hover:bg-[#015784] md:hover:bg-transparent pl-6 md:pl-0">
+              <a href="#contact" class="block py-2 px-3 rounded-sm">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </body>
+  <!-- Flowbite JS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </html>
