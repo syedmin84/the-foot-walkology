@@ -7,3 +7,10 @@
     font-family: "Archivo", sans-serif;
   }
 }
+
+@theme {
+  --breakpoint-xs: 580px;
+  --breakpoint-xxs: 500px;
+}
+
+
