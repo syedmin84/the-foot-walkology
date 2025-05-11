@@ -66,12 +66,12 @@
             <li
               class="hover:bg-[#015784] pl-6 md:pl-0 transition-all duration-200 ease-in-out"
             >
-              <a href="#about" class="block py-2 px-3 rounded-sm">About</a>
+              <a href="#about-section" class="block py-2 px-3 rounded-sm">About</a>
             </li>
             <li
               class="hover:bg-[#015784] pl-6 md:pl-0 transition-all duration-200 ease-in-out"
             >
-              <a href="#client-feedback" class="block py-2 px-3 rounded-sm"
+              <a href="#testimonials-section" class="block py-2 px-3 rounded-sm"
                 >Client Feedback</a
               >
             </li>
@@ -187,7 +187,7 @@
       </div>
     </section>
 
-    <section id="about-section " class="max-w-screen-2xl mx-auto mt-28">
+    <section id="about-section" class="mx-auto max-w-screen-2xl mt-16 pt-3">
       <h1
         class="md:hidden text-white my-5 text-3xl font-bold text-center font-archivo"
       >
@@ -196,27 +196,31 @@
       <!-- laptop view -->
       <div class="flex flex-row max-w-screen-xl md:gap-12">
         <div
-          class=" relative mx-auto md:mx-0 w-[80%] md:w-1/2 bg-[url('../images/about-us-background.png')] h-[550px] mdx:h-[600px] border"
+          class="relative mx-auto md:mx-0 w-[85%] md:w-1/2 bg-[url('../images/about-us-background.png')] h-[550px] mdx:h-[600px] border"
         >
           <img
             src="../images/about-shoe.png"
             alt="shoe-image"
             class="w-full h-[115%] object-contain"
           />
+          <!-- mobile view -->
           <div
-          class=" px-[3%] -bottom-[46%] sm:-bottom-[42%]  absolute md:hidden flex flex-col gap-4 p-4 text-white text-base"
+            class="px-[3%] -bottom-[46%] sm:-bottom-[42%] absolute md:hidden flex flex-col gap-4 p-4 text-white text-base"
+          >
+            <p>
+              For each one of those shoe sweethearts out there, THE SHOE COMPANY
+              offer the one-stop goal to pick the correct match of footwear.
+            </p>
+            <p>
+              At THE SHOE COMPANY, you can locate a vast accumulation of dashing
+              footwear in all sizes and styles, all inside a couple of snaps.
+            </p>
+          </div>
+        </div>
+        <div
+          id="about-laptop "
+          class="w-[40%] self-center xl:ml-auto hidden md:block"
         >
-          <p>
-            For each one of those shoe sweethearts out there, THE SHOE COMPANY
-            offer the one-stop goal to pick the correct match of footwear.
-          </p>
-          <p>
-            At THE SHOE COMPANY, you can locate a vast accumulation of dashing
-            footwear in all sizes and styles, all inside a couple of snaps.
-          </p>
-        </div>
-        </div>
-        <div id="about " class="w-[40%] self-center xl:ml-auto hidden md:block">
           <div class="flex flex-col gap-4 p-4 text-white text-sm lg:text-base">
             <h1 class="text-4xl font-bold text-center font-archivo">
               About Us
@@ -244,10 +248,57 @@
           </div>
         </div>
       </div>
-
-      <!-- mobile view -->
-     
     </section>
+
+    <section id="testimonials-section" class="max-w-screen-2xl mx-auto mt-96 md:mt-28 bg-[url('../images/testimonial-background.png')] bg-cover pt-10 pb-16 md:pb-32  ">
+    
+        <div class="max-w-screen-xl mx-auto  ">
+      <h1
+        class="mb-12 text-3xl font-bold text-center font-archivo text-white leading-12 max-w-lg px-4 mx-auto"
+      >
+        What People are saying about THE FOOT WALKOLOGY ?
+      </h1>
+      <div class="flex flex-col md:flex-row  max-w-screen-xl items-center md:items-start md:justify-between gap-6 lg:gap-10 ">
+        <!-- person1 -->
+        <div class="flex flex-col items-center gap-1 p-4 text-white ">
+          <img
+            src="../images/person1.png"
+            alt="testimonial"
+            class=" w-[255px] h-[255px] md:w-[200px] md:h-[200px] lg:w-[255px] lg:h-[255px] rounded-full"
+          />
+          <p class=" w-[300px] md:w-[200px] lg:w-[255px] text-center text-lg ">
+            “Looking for shoes that are built just for you? THE FOOT WALKOLOGY is
+            the way to go. Love the design and build quality.”
+          </p>
+        </div>
+        <!-- person2 -->
+        <div class="flex flex-col items-center gap-1  p-4 text-white ">
+          <img
+            src="../images/person2.png"
+            alt="testimonial"
+            class="w-[255px] h-[255px] md:w-[200px] md:h-[200px] lg:w-[255px] lg:h-[255px] rounded-full"
+          />
+          <p class="w-[300px] md:w-[200px] lg:w-[255px] text-center text-lg ">
+            “I love the shoes, the quality, and everyting. They are worth the
+            investment!”
+          </p>
+        </div>
+        <!-- person3 -->
+        <div class="flex flex-col items-center gap-1 p-4 text-white">
+          <img
+            src="../images/person3.png"
+            alt="testimonial"
+            class=" w-[255px] h-[255px] md:w-[200px] md:h-[200px] lg:w-[255px] lg:h-[255px] rounded-full"
+          />
+          <p class="w-[300px] md:w-[200px] lg:w-[255px] text-center text-lg ">
+            “They make the best and forever lasting shoes. Superb fit and
+            confort is literally the next level. Much recommended!”
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
     <h1>
       <p class="py-48"></p>
     </h1>
