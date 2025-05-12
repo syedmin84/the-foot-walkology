@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+     <link rel="stylesheet" href="style.css">
     <title>The Foot Walkology</title>
   </head>
-  <body class="bg-[#CD031C]">
+  <body class="bg-[#CD031C] ">
     <!-- Navigation Bar -->
-    <nav class="navigation-bar fixed w-full z-10 pb-1">
+    <nav class="navigation-bar fixed w-full z-10 pb-1 ">
       <div
         class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4 md:px-8"
       >
@@ -88,7 +89,7 @@
     </nav>
     <!-- Hero Section -->
     <header
-      class="relative z-0 bg-[url('../images/sm-background-hero.png')] md:bg-[url('../images/shoe-hero-background.png')] bg-cover md:bg-contain bg-no-repeat bg-right pt-30 md:px-16 max-w-screen-2xl mx-auto md:pb-10"
+      class="relative z-0 bg-[url('../images/sm-background-hero.png')] md:bg-[url('../images/shoe-hero-background.png')] bg-cover md:bg-contain bg-no-repeat bg-right  pt-30  max-w-screen-2xl   mx-auto md:pb-10"
     >
       <div
         class="flex flex-col gap-12 md:gap-0 md:flex-row md:items-center justify-between max-w-6xl mx-auto"
@@ -188,23 +189,23 @@
       </div>
     </section>
     <!-- About Us Section -->
-    <section id="about-section" class="mx-auto max-w-screen-2xl mt-16 pt-3">
+    <section id="about-section" class="mx-auto max-w-screen-2xl mt-16 pt-3   ">
       <h1
         class="md:hidden text-white my-5 text-3xl font-bold text-center font-archivo"
       >
         About Us
       </h1>
       <!-- laptop view -->
-      <div class="flex flex-row max-w-screen-xl md:gap-12">
+      <div class="flex flex-row max-w-screen-2xl md:gap-12 2xl:pl-8 " >
         <div
-          class="relative mx-auto md:mx-0 w-[85%] md:w-1/2 bg-[url('../images/about-us-background.png')] h-[550px] mdx:h-[600px] border"
-        >
+          class="relative mx-auto md:mx-0 w-[85%] md:w-1/2 bg-[url('../images/about-us-background.png')] h-[550px] mdx:h-[600px] bg-no-repeat"
+        > 
           <img
             src="../images/about-shoe.png"
             alt="shoe-image"
             class="w-full h-[115%] object-contain"
           />
-          <!-- mobile view -->
+         
           <div
             class="px-[3%] -bottom-[46%] sm:-bottom-[42%] absolute md:hidden flex flex-col gap-4 p-4 text-white text-base"
           >
@@ -220,7 +221,7 @@
         </div>
         <div
           id="about-laptop "
-          class="w-[40%] self-center xl:ml-auto hidden md:block"
+          class="w-[40%] self-center  hidden md:block "
         >
           <div class="flex flex-col gap-4 p-4 text-white text-sm lg:text-base">
             <h1 class="text-4xl font-bold text-center font-archivo">
@@ -253,11 +254,11 @@
     <!-- Testimonials Section -->
     <section
       id="testimonials-section"
-      class="max-w-screen-2xl mx-auto mt-96 md:mt-28 bg-[url('../images/testimonial-background.png')] bg-cover pt-10 pb-16 md:pb-32"
+      class=" 2xl:px-8 2xl:bg-origin-content max-w-screen-2xl mx-auto mt-96 md:mt-28 bg-[url('../images/testimonial-background.png')] bg-no-repeat bg-cover pt-10 pb-16 "
     >
       <div class="max-w-screen-xl mx-auto">
         <h1
-          class="mb-12 text-3xl font-bold text-center font-archivo text-white leading-12 max-w-lg px-4 mx-auto"
+          class="xl:mt-8 mb-12 text-3xl font-bold text-center font-archivo text-white leading-12 max-w-lg px-4 mx-auto"
         >
           What People are saying about THE FOOT WALKOLOGY ?
         </h1>
@@ -359,8 +360,7 @@
 
 
     <!-- Footer -->
- <div class="bg-[#D9D9D9] w-full h-[0.1px] mb-4 md:mb-0"></div>
-<footer class="max-w-screen-2xl mx-auto ">
+<footer class="max-w-screen-2xl mx-auto bg-[url('../images/testimonial-background.png')] bg-no-repeat bg-cover bg-bottom pt-3 md:pt-0">
     <div class="mx-auto w-full max-w-screen-xl">
     <div class="px-4 gap-4 md:gap-0 pb-2 md:py-7 flex flex-col-reverse md:flex-row items-center justify-between">
         <span class="text-sm text-white text-center">© 2025 <a href="https://flowbite.com/">WALKOLOGY™</a>. All Rights Reserved.
