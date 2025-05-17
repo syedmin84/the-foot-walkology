@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -203,12 +202,6 @@
   }
 }
 @layer utilities {
-  .invisible {
-    visibility: hidden;
-  }
-  .visible {
-    visibility: visible;
-  }
   .sr-only {
     position: absolute;
     width: 1px;
@@ -244,26 +237,11 @@
   .top-\[-10px\] {
     top: -10px;
   }
-  .top-\[-20px\] {
-    top: -20px;
-  }
-  .top-\[-30px\] {
-    top: -30px;
-  }
-  .top-\[-40px\] {
-    top: -40px;
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
   .right-\[10px\] {
     right: 10px;
-  }
-  .right-\[15px\] {
-    right: 15px;
-  }
-  .right-\[20px\] {
-    right: 20px;
   }
   .-bottom-\[46\%\] {
     bottom: calc(46% * -1);
@@ -297,9 +275,6 @@
   }
   .-mt-5 {
     margin-top: calc(var(--spacing) * -5);
-  }
-  .-mt-7 {
-    margin-top: calc(var(--spacing) * -7);
   }
   .-mt-18 {
     margin-top: calc(var(--spacing) * -18);
@@ -340,9 +315,6 @@
   .table {
     display: table;
   }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -370,9 +342,6 @@
   .max-h-\[490px\] {
     max-height: 490px;
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
@@ -387,9 +356,6 @@
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
-  }
-  .w-26 {
-    width: calc(var(--spacing) * 26);
   }
   .w-\[40\%\] {
     width: 40%;
@@ -447,6 +413,9 @@
   }
   .min-w-60 {
     min-width: calc(var(--spacing) * 60);
+  }
+  .min-w-\[400px\] {
+    min-width: 400px;
   }
   .min-w-\[500px\] {
     min-width: 500px;
@@ -551,9 +520,6 @@
   .bg-\[\#cd031b\] {
     background-color: #cd031b;
   }
-  .bg-\[\#cd031cb5\] {
-    background-color: #cd031cb5;
-  }
   .bg-transparent {
     background-color: transparent;
   }
@@ -563,14 +529,26 @@
   .bg-\[url\(\'\.\.\/images\/about-us-background\.png\'\)\] {
     background-image: url('../images/about-us-background.png');
   }
-  .bg-\[url\(\'\.\.\/images\/sm-background-hero\.png\'\)\] {
-    background-image: url('../images/sm-background-hero.png');
-  }
   .bg-\[url\(\'\.\.\/images\/sm-road\.png\'\)\] {
     background-image: url('../images/sm-road.png');
   }
   .bg-\[url\(\'\.\.\/images\/testimonial-background\.png\'\)\] {
     background-image: url('../images/testimonial-background.png');
+  }
+  .bg-\[url\(\'\/images\/sm-background-hero\.png\'\)\] {
+    background-image: url('/images/sm-background-hero.png');
+  }
+  .bg-\[url\(\'images\/about-us-background\.png\'\)\] {
+    background-image: url('images/about-us-background.png');
+  }
+  .bg-\[url\(\'images\/sm-background-hero\.png\'\)\] {
+    background-image: url('images/sm-background-hero.png');
+  }
+  .bg-\[url\(\'images\/sm-road\.png\'\)\] {
+    background-image: url('images/sm-road.png');
+  }
+  .bg-\[url\(\'images\/testimonial-background\.png\'\)\] {
+    background-image: url('images/testimonial-background.png');
   }
   .bg-cover {
     background-size: cover;
@@ -699,10 +677,6 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-xs {
-    font-size: var(--text-xs);
-    line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -755,10 +729,6 @@
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .backdrop-filter {
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
   .transition-all {
     transition-property: all;
@@ -905,6 +875,16 @@
       max-width: var(--container-xl);
     }
   }
+  .sm\:min-w-\[480px\] {
+    @media (width >= 40rem) {
+      min-width: 480px;
+    }
+  }
+  .sm\:min-w-\[500px\] {
+    @media (width >= 40rem) {
+      min-width: 500px;
+    }
+  }
   .sm\:rotate-\[35deg\] {
     @media (width >= 40rem) {
       rotate: 35deg;
@@ -913,11 +893,6 @@
   .sm\:pr-0 {
     @media (width >= 40rem) {
       padding-right: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:visible {
-    @media (width >= 48rem) {
-      visibility: visible;
     }
   }
   .md\:static {
@@ -985,11 +960,6 @@
       display: block;
     }
   }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
-    }
-  }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
@@ -1005,19 +975,9 @@
       width: calc(1/2 * 100%);
     }
   }
-  .md\:w-20 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 20);
-    }
-  }
   .md\:w-22 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 22);
-    }
-  }
-  .md\:w-28 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 28);
     }
   }
   .md\:w-\[200px\] {
@@ -1136,9 +1096,14 @@
       background-color: transparent;
     }
   }
-  .md\:bg-\[url\(\'\.\.\/images\/shoe-hero-background\.png\'\)\] {
+  .md\:bg-\[url\(\'\/images\/shoe-hero-background\.png\'\)\] {
     @media (width >= 48rem) {
-      background-image: url('../images/shoe-hero-background.png');
+      background-image: url('/images/shoe-hero-background.png');
+    }
+  }
+  .md\:bg-\[url\(\'images\/shoe-hero-background\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('images/shoe-hero-background.png');
     }
   }
   .md\:bg-none {
@@ -1634,42 +1599,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-backdrop-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-backdrop-sepia {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1721,15 +1650,6 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
-      --tw-backdrop-blur: initial;
-      --tw-backdrop-brightness: initial;
-      --tw-backdrop-contrast: initial;
-      --tw-backdrop-grayscale: initial;
-      --tw-backdrop-hue-rotate: initial;
-      --tw-backdrop-invert: initial;
-      --tw-backdrop-opacity: initial;
-      --tw-backdrop-saturate: initial;
-      --tw-backdrop-sepia: initial;
       --tw-duration: initial;
       --tw-ease: initial;
     }
