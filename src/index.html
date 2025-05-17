@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <link href="./output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
     <title>The Foot Walkology</title>
   </head>
   <body class="bg-[#CD031C]">
     <!-- Navigation Bar -->
-    <nav class="navigation-bar fixed w-full z-10 pb-1">
+    <nav id="navbar" class="navigation-bar fixed w-full z-10 pb-1 ">
       <div
         class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4 md:px-8"
       >
         <a href="#" class="flex flex-col font-archivo">
-          <img src="../images/logo.svg" class="w-26 md:w-28" alt="" />
-          <span class="text-white text-xs -mt-7 font-medium font-archivo">
+          <img src="../images/logo.svg" class="w-20 md:w-22" alt="" />
+          <span class="text-white text-[10px] -mt-5 font-medium font-archivo">
             The Foot Walkology</span
           >
         </a>
         <button
+          id="navbar-button"
           data-collapse-toggle="navbar-dropdown"
           type="button"
-          class="inline-flex items-center p-1 w-10 h-10 justify-center text-4xl text-gray-200 border-[1px] rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="  inline-flex items-center p-1 w-10 h-10 justify-center text-4xl text-gray-200 border-[1px] rounded-lg md:hidden hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-dropdown"
           aria-expanded="false"
         >
@@ -49,7 +50,8 @@
           id="navbar-dropdown"
         >
           <ul
-            class="md:rounded-none bg-[#cd031cb5] md:bg-transparent shadow-2xl md:shadow-none py-[10px_100px] md:py-0 absolute right-[20px] top-[-30px] md:static min-w-60 md:w-full overflow-hidden lg:text-lg lg:font-bold text-white flex flex-col font-medium md:p-0 mt-4 md:mt-0 md:border-0 rounded-lg md:space-x-4 lg:space-x-8 rtl:space-x-reverse md:flex-row gap-2 md:gap-0"
+            id="nav-list"
+            class=" md:rounded-none bg-[#cd031b] md:bg-transparent shadow-2xl md:shadow-none py-[10px_100px] md:py-0 absolute right-[10px] top-[-10px] md:static min-w-60 md:w-full overflow-hidden lg:text-lg lg:font-bold text-white flex flex-col font-medium md:p-0 mt-4 md:mt-0 md:border-0 rounded-lg md:space-x-4 lg:space-x-8 rtl:space-x-reverse md:flex-row gap-2 md:gap-0"
           >
             <li
               class="hover:bg-[#015784] pl-6 md:pl-0 transition-all duration-200 ease-in-out"
@@ -404,14 +406,14 @@
         <div class="md:ml-auto">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429184.5590303898!2d-97.0617657262733!3d32.81864925227789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1747049182548!5m2!1sen!2s"
-            class=" min-w-[500px] w-full lg:w-[530px] px-8 md:px-0 md:pr-8 xl:pr-0 xl:w-2xl max-h-[490px] lg:max-h-[580px] object-cover"
+            class="min-w-[500px] w-full lg:w-[530px] px-8 md:px-0 md:pr-8 xl:pr-0 xl:w-2xl max-h-[490px] lg:max-h-[580px] object-cover"
             style="border: 0"
-             height="450"
+            height="450"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          
+
           <!-- <img src="../images/google-maps.png" alt="google-maps" class="w-full lg:w-[530px] px-8 md:px-0 md:pr-8 xl:pr-0 xl:w-2xl max-h-[490px] lg:max-h-[580px] object-cover"> -->
         </div>
       </div>
@@ -516,6 +518,20 @@
       </div>
     </footer>
   </body>
-  <!-- Flowbite JS  -->
+  <script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.remove("bg-transparent");
+      navbar.classList.add("bg-[#CD031C]", "shadow-md");
+    } else {
+      navbar.classList.add("bg-transparent");
+      navbar.classList.remove("bg-white", "shadow-md");
+    }
+  });
+  
+
+</script>
+  Flowbite JS 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </html>
