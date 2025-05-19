@@ -18,12 +18,12 @@ A static frontend demo for a sports shoe store, built with **React** and **Tailw
 - **Build Tool**: Vite  
 - **Deployment**: Netlify
 
-- 🔮 Future Scope
-Integrate Firebase for real-time data.
+## 🔮 Future Scope
+- Improve design Make data dynamic
+- Integrate Firebase for real-time data
+- Add cart functionality with React context
+- Implement product search and filters
 
-Add cart functionality with React context.
-
-Implement product search and filters.
-
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Fork the repo, create a branch, and submit a PR.
+
